@@ -1,5 +1,6 @@
 
 **/data/*.csv
 *.wav
+*.mp3
 **/.idea/*
 *.npy
