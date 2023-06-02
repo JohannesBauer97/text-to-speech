@@ -58,10 +58,10 @@ def PlayWav(wavarray):
 if __name__ == '__main__':
     synCustom = InitSynthesizer()
     synPretrained = InitSynthesizer(True)
-    synPretrainedNoVocder = InitSynthesizer(True, False)
+    synPretrainedNoVocoder = InitSynthesizer(True, False)
     wavCustom = TextToSpeech("Hallo, wie geht es dir?", synCustom)
     wavPretrained = TextToSpeech("Hallo, wie geht es dir?", synPretrained)
-    wavPretrainedNoVocoder = TextToSpeech("Hallo, wie geht es dir?", synPretrainedNoVocder)
+    wavPretrainedNoVocoder = TextToSpeech("Hallo, wie geht es dir?", synPretrainedNoVocoder)
 
     input("\n Synthese abgeschlossen, drücke eine Taste für Ausgabe des selbst trainierten Models")
     PlayWav(wavCustom)
